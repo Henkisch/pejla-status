@@ -1,0 +1,65 @@
+owner: Henkisch
+repo: pejla-status
+
+sites:
+  # ── Marknadssida & app ──────────────────────────────────────────────
+  - name: "Marknadssida — pejla.app"
+    url: https://pejla.app
+    icon: https://pejla.app/favicon.ico
+  - name: "App — my.pejla.app"
+    url: https://my.pejla.app
+    icon: https://pejla.app/favicon.ico
+
+  # ── Hosting ─────────────────────────────────────────────────────────
+  - name: "Hosting — Vercel"
+    url: https://www.vercel-status.com/
+    icon: https://www.google.com/s2/favicons?sz=64&domain=vercel.com
+
+  # ── Databas ─────────────────────────────────────────────────────────
+  - name: "Databas — Neon"
+    url: https://neonstatus.com/
+    icon: https://www.google.com/s2/favicons?sz=64&domain=neon.tech
+
+  # ── Autentisering ───────────────────────────────────────────────────
+  - name: "Autentisering — Clerk"
+    url: https://status.clerk.com/
+    icon: https://www.google.com/s2/favicons?sz=64&domain=clerk.com
+
+  # ── E-post ──────────────────────────────────────────────────────────
+  - name: "E-post — Resend"
+    url: https://resend-status.com/
+    icon: https://www.google.com/s2/favicons?sz=64&domain=resend.com
+
+  # ── CMS ─────────────────────────────────────────────────────────────
+  - name: "CMS — Sanity"
+    url: https://www.sanity-status.com/
+    icon: https://www.google.com/s2/favicons?sz=64&domain=sanity.io
+
+  # ── Skatteverket ────────────────────────────────────────────────────
+  # No public Skatteverket status page exists — pings their API host
+  # directly instead of a third-party page. A non-2xx/3xx here doesn't
+  # necessarily mean Skatteverket is down (it could be an auth-required
+  # 401 on the bare host), but a hard timeout/5xx is a real signal.
+  - name: "Skatteverket — API"
+    url: https://api.skatteverket.se
+    expectedStatusCodes:
+      - 200
+      - 301
+      - 302
+      - 401
+      - 403
+      - 404
+
+status-website:
+  cname: status.pejla.app
+  name: Pejla Status
+  introTitle: "**Pejla Status**"
+  introMessage: "Drifttiden för Pejla och tjänsterna vi bygger på. Uppdateras automatiskt var 5:e minut, oberoende av vår egen infrastruktur (körs på GitHub Actions + Pages, inte Vercel)."
+  navbar:
+    - title: Status
+      href: /
+    - title: Pejla
+      href: https://pejla.app
+
+workflowSchedule:
+  uptime: "*/5 * * * *"
