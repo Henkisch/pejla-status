@@ -19,6 +19,11 @@ sites:
   - name: "Databas — Neon"
     url: https://neonstatus.com/
     icon: https://www.google.com/s2/favicons?sz=64&domain=neon.tech
+  # Pejla moves to Supabase (Stockholm) during October 2026; Neon stays
+  # listed until the move is done and Neon is shut down.
+  - name: "Databas — Supabase"
+    url: https://status.supabase.com/
+    icon: https://www.google.com/s2/favicons?sz=64&domain=supabase.com
 
   # ── Autentisering ───────────────────────────────────────────────────
   - name: "Autentisering — Clerk"
