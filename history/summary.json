@@ -19,7 +19,7 @@
   },
   {
     "name": "App — my.pejla.app",
-    "url": "https://my.pejla.app",
+    "url": "https://my.pejla.app/api/health",
     "icon": "https://pejla.app/favicon.ico",
     "slug": "app-my-pejla-app",
     "status": "up",
@@ -51,24 +51,6 @@
     "timeWeek": 237,
     "timeMonth": 228,
     "timeYear": 240,
-    "dailyMinutesDown": {}
-  },
-  {
-    "name": "Databas — Neon",
-    "url": "https://neonstatus.com/",
-    "icon": "https://www.google.com/s2/favicons?sz=64&domain=neon.tech",
-    "slug": "databas-neon",
-    "status": "up",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 196,
-    "timeDay": 103,
-    "timeWeek": 109,
-    "timeMonth": 193,
-    "timeYear": 196,
     "dailyMinutesDown": {}
   },
   {
