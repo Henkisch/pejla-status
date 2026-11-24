@@ -10,7 +10,7 @@ reachable even if Pejla itself is down.
 
 Monitors: the marketing site and app (pejla.app / my.pejla.app), plus the
 official status pages of every third-party service Pejla depends on
-(Vercel, Neon, Clerk, Resend, Sanity) and a direct ping of Skatteverket's
+(Vercel, Supabase, Clerk, Resend, Sanity) and a direct ping of Skatteverket's
 API host (no public Skatteverket status page exists).
 
 Config lives in [`.upptimerc.yml`](.upptimerc.yml). To add or change a
