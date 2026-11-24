@@ -7,7 +7,9 @@ sites:
     url: https://pejla.app
     icon: https://pejla.app/favicon.ico
   - name: "App — my.pejla.app"
-    url: https://my.pejla.app
+    # /api/health answers 200 only when the app reaches its database
+    # (503 otherwise); the root URL redirects to sign-in either way.
+    url: https://my.pejla.app/api/health
     icon: https://pejla.app/favicon.ico
 
   # ── Hosting ─────────────────────────────────────────────────────────
@@ -16,11 +18,7 @@ sites:
     icon: https://www.google.com/s2/favicons?sz=64&domain=vercel.com
 
   # ── Databas ─────────────────────────────────────────────────────────
-  - name: "Databas — Neon"
-    url: https://neonstatus.com/
-    icon: https://www.google.com/s2/favicons?sz=64&domain=neon.tech
-  # Pejla moves to Supabase (Stockholm) during October 2026; Neon stays
-  # listed until the move is done and Neon is shut down.
+  # Production runs on Supabase (Stockholm) since 2026-11-16.
   - name: "Databas — Supabase"
     url: https://status.supabase.com/
     icon: https://www.google.com/s2/favicons?sz=64&domain=supabase.com
